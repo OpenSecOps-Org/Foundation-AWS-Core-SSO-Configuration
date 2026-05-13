@@ -1,5 +1,7 @@
 # AWS Core SSO Configuration
 
+[![Daily CVE scan](https://github.com/OpenSecOps-Org/Foundation-AWS-Core-SSO-Configuration/actions/workflows/daily-scan.yml/badge.svg)](https://github.com/OpenSecOps-Org/Foundation-AWS-Core-SSO-Configuration/actions/workflows/daily-scan.yml) [![OpenSSF Scorecard](https://github.com/OpenSecOps-Org/Foundation-AWS-Core-SSO-Configuration/actions/workflows/scorecard.yml/badge.svg)](https://github.com/OpenSecOps-Org/Foundation-AWS-Core-SSO-Configuration/actions/workflows/scorecard.yml)
+
 Utility to manage AWS SSO Permission Sets, SSO Groups, and their assignments to AWS
 accounts from declarative YAML configuration files. Control Tower is not required.
 

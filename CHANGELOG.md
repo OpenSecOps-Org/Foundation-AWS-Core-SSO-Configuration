@@ -1,5 +1,8 @@
 # Change Log
 
+## v1.2.9
+    * Converted to OpenSecOps supply-chain framework (libraryless variant). This component ships zsh sync scripts with no Python library dependencies, so the release pipeline emits a deterministic source archive (`git archive HEAD`) + SLSA Build L1 in-toto provenance attesting to it, both Sigstore-signed (`.bundle` files alongside each artefact). The customer-side `scripts/deploy.py` (Installer v3.0.11+) verifies the signatures against the maintainer identity (`peter@peterbengtson.com` via `https://github.com/login/oauth`) before any deploy. Adds daily CVE scan and OpenSSF Scorecard workflows (both trivially pass — no library deps to scan). See `SECURITY.md`.
+
 ## v1.2.8
     * Enable auto-close workflow for external pull requests, enforcing the cathedral governance policy uniformly across all OpenSecOps repositories. Pull requests from non-team authors are closed automatically with a redirect comment pointing to the bug-report template, the GitHub Security Advisory flow, and the fork-under-MPL-2.0 path.
 
